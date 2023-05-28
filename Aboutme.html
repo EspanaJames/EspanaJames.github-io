@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/337448030_708855564365402_8844156887451445602_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHpBTmPOpmU_JnX0vlvt-gIhXW6iwFEt46FdbqLAUS3jt3oulW1tIJAto7haLNFOF2FMlBta91TqSmr627N7VdM&_nc_ohc=gUZeFhbzms0AX-m1r7f&_nc_ht=scontent.fceb1-1.fna&oh=03_AdT3AX-w3_LAI_emcL0H6TuHmgpVTiOqN-iuAL_r6znlEw&oe=6489E584">
+        <style>
+           body{
+    background-image: url(https://wallpapercave.com/wp/wp10776145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: fixed;
+    height: 11%;
+    width: 7%;
+    top: 0;
+    left: 15px;
+    z-index: 99;
+}
+.lat{
+    position: absolute;
+    margin-left: 700px;
+    margin-right: auto;
+    z-index: 31;
+}
+.Bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 66;
+    overflow: hidden;
+    padding-top: .5%;
+    padding-bottom: 0;
+    justify-content: center;
+    display: flex;
+}
+h6{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: -2px -2px -2px -2px;
+}
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: -2px -2px -2px -2px;
+}
+.intro{
+    padding-top: 2%;
+    margin-top: 7%;
+    z-index: 2;
+    box-shadow: 10px 10px 10px grey;
+    border: solid rgb(0, 0, 0);
+    height: 50vh;
+    width: 60vw;
+    background-color: white;
+    justify-content: center;
+    opacity: .4;
+}
+.Bar a {
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: #030303;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 0px;
+}
+
+.Bar a:hover {
+    border-bottom: solid #030303;
+}
+
+.Bar a.active {
+    border-bottom: solid #f5f5f5;
+}
+.Bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+.Bar .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .Bar a:not(:first-child) {display: none;}
+    .Bar a.icon {
+    float: right;
+    display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Bar.responsive {position: relative;}
+    .Bar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+.Bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    } 
+.Bar.responsive .dropdown {float: none;}
+.Bar.responsive .dropdown-content {position: relative;}
+.Bar.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1200px;
+    position: fixed;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 30px;
+}
+
+.Bar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+  }
+  
+.projects-section > h2 {
+    font-family: sans-serif;
+    font-size: 5rem;
+    max-width: 700px;
+    margin: 0 auto 6rem auto;
+    color: #333;
+    border-bottom: 0.2rem solid white;
+  }
+  
+  .mygrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    max-width: 1610px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  .work {
+    background: #c96406;
+    box-shadow: 1px 1px 2px rgba(172, 79, 2, 0.5);
+    border-radius: 1.5px;
+    list-style: none;
+  }
+  
+  .work:hover {
+    transform: translateY(5px);
+    transition: transform 0.2s;
+  }
+  
+  .work-image {
+    height: calc(100% - 5rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .work-title {
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: .5rem 0rem;
+    color: white;
+  }
+  .flut {
+    position: fixed;
+    height: 50px;
+    width:50px;
+    top: 30px;
+    right: 30px;
+    z-index: 80;
+  }
+            .james{
+                position: absolute;
+                opacity: 1;
+            }
+            div.gallery {
+                position:absolute; 
+                left:20px; 
+                top:150px;
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+                opacity: 1;
+                padding-bottom:
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }   
+            .butt{
+                position: fixed;
+                left:20px; 
+                top:900px;  
+                float:left; 
+                margin:1px;
+            }
+            .lods{
+                width:  80px;
+                height: 80px;
+                object-fit: cover;
+                float: left;
+                
+            }
+            .lods2{
+                position: fixed;
+                left: 335px;
+                top: 893px;
+                width:  100px;
+                height: 100px;
+                object-fit: cover;
+                float: left;
+            }
+            .placement{
+                position: absolute;
+                left: 65%;
+                top: 12%;
+                bottom: 30;
+                height: 30%;
+                width: 30%;
+            }
+            .crow{
+                border-radius: 50%;
+                height: 200%;
+                width: 100%;
+            }
+            .text{
+                position: absolute;
+                top: 18%;
+                left: 12%;
+            }
+            .text h2{
+                font-size: 40px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .text2{
+                position: absolute;
+                top: 25%;
+                left: 13%;
+            }
+            .text2 h3{
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: justify;
+            }
+            .text3{
+                position: absolute;
+                top: 62%;
+                left: 1%;
+            }
+            .text3 h4{
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: justify;
+            }
+            .logo{
+    position: fixed;
+    height: 11%;
+    width: 7%;
+    top: 0;
+    left: 15px;
+    z-index: 99;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+			<a href="..//FINAL PROJECT CS/index.html"><img class="logo" src="..//FINAL PROJECT CS/photos/icon.png" alt="logo">
+			</a>
+		  </div>
+        <section>
+            <div class="intro">
+            </div>
+            <div class="text">
+                <h2>I am James España.</h2>
+            </div>
+            <div class="text2">
+                <h3>My name is James España, I am a student at the University of Bohol.<br/> I am an aspiring computer Engineering student, who aims to master<br/> the lessons within my course. Website creation is one of the things<br/> that I hope to learn and profit from.</h3>
+            </div>
+            <div class="text3">
+                <h4>Note: You can contact me using the icons at the bottom.</h4>
+            </div>
+            <div class="placement">
+                <a href="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/345710793_1787872208277246_7805463508936389902_n.jpg?_nc_cat=104&cb=99be929b-3346023f&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1IeiGHHPRzYAX-2vtbj&_nc_ht=scontent.fceb1-3.fna&oh=03_AdSuHb5p4FbDokpJFmHcD2pDpQ5QcC0ENyb2Lyd4xGCapQ&oe=64979394"><img class="crow" src="..//FINAL PROJECT CS/photos/ub.jpg">
+                    </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/337146896_1543986059421038_4138716083962961957_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGbhPUdMK3R1E4idMYDYETKJARsz57HryEkBGzPnsevIduJJC3X_5VVA6BEL6MIKY-h_9mpoRS8_WSxhjAiFpIV&_nc_ohc=v1ZiMYcHKP4AX9_chfQ&_nc_ht=scontent.fceb1-2.fna&oh=03_AdRWRdY2P__HEHXuDDAIjOWCh_7gA08Xqdth-KI2HfeQkg&oe=6489B85A">
+                 <img src="..//FINAL PROJECT CS/photos/nawng.jpg" alt="Picture" width="600" height="400">
+                </a>
+                <div class="desc">James España</br>Aspiring Computer Engineer</div>
+            </div>
+            
+        </section>
+        <div>
+            <p class="butt">
+            <a href = "https://www.facebook.com/james.espana.3" target="_blank"><img src="..//FINAL PROJECT CS/photos/fackbook.png" class="lods2"></a>
+            <a href = "https://twitter.com/ZiagoAspe?t=6WJ0ReLLl1jJhfUsNsWvxA&s=09" target="_blank"><img src="..//FINAL PROJECT CS/photos/twitcon.png" class="lods"></a>
+            <a href = "https://youtube.com/@jamesespana1793?feature=shares" target="_blank"><img src="..//FINAL PROJECT CS/photos/youcon.png" class="lods"></a>
+            <a href = "https://instagram.com/ziago.aspe?igshid=ZDdkNTZiNTM=" target="_blank"><img src="..//FINAL PROJECT CS/photos/instacon.png" class="lods"></a>
+            <a href = "https://www.linkedin.com/in/james-espa%C3%B1a-622808266/" target="_blank"><img src="..//FINAL PROJECT CS/photos/linkedcon.png" class="lods"></a>
+            </p>
+        </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myBar");
+                  if (x.className === "Bar") {
+                    x.className += "responsive";
+                  } else {
+                    x.className = "Bar";
+                  }
+                }
+            </script>
+        <nav title="navigation-bar" class="Bar">
+            <div class="Bar" id="Bar">
+                <a href="index.html"><h3>HOME PAGE</h3></a>
+                <a href="..//Ceevee_2_0_0/portfolio.html" class="active"><h4>portfolio</h4></a>
+                <div class="dropdown">
+                    <button class="dropbtn"><h4>about me</h4> 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="Aboutme.html">personal</a>
+                      <a href="family_espana1.html">family</a>
+                    </div>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <a href="index.html">
+                <img class="flut" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/346105162_569462081738991_6806685114617458197_n.png?stp=dst-png_s403x403&_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Dm9lk3m2rYIAX_uZlo0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTj0PpniGYmqAnZRQNAuB7Q8BaSTzikmUMDETOiromvzA&oe=64912BE0">
+              </a>
+        </nav>
+    </body>
+    
+</html>

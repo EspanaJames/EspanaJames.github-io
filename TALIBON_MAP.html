@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            $(document).ready(function () {
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+          </script>
+        <style>
+
+      area:hover {
+        cursor: pointer;
+      }
+
+      area[title]:hover:after {
+        content: attr(title);
+        padding: 50px 20px 50px 20px;
+        color: rgb(57, 55, 58);
+        background: rgb(188, 127, 230);
+        position: fixed;
+        z-index: 9999;
+        left: 78.65%;
+        top: 46%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 16px;
+      }
+      body{
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+        background-color:#008080;
+      }
+      h1 {
+        font-family: "Outfit", sans-serif;
+        color: #333;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-family: "Outfit", sans-serif;
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom-style: groove;
+        border-color: #333;
+        background: darkkhaki;
+        z-index: 10;
+      }
+      #nobilat{
+        height: 100vh;
+        width: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .talibs{
+        width: 45vw;
+        height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: 45vw;
+        margin-top: 10%;
+        padding-top: 5vh;
+      }
+      .cut{
+        background-color: #008080;
+      }
+      .flut {
+    position: fixed;
+    height: 50px;
+    width:50px;
+    top: 30px;
+    right: 30px;
+    z-index: 80;
+  }
+      </style>
+    </head>
+    <body>
+        <nav title="nav-bar" class="bar">
+            <h1>MAP OF TALIBON</h1>
+        </nav>
+
+        <section id="nobilat" class="cut">
+            <div>
+                <img class="talibs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Map_of_Talibon.png/625px-Map_of_Talibon.png?20150307143643" usemap="#talibs">
+                <map name="talibs">
+    <area  alt="Magsasaysay" title="Magsasaysay - Population:1,467 - Households:290 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="111,449,114,548,98,617,166,619,144,578,179,533,244,511,254,462,193,446" shape="poly">
+    <area  alt="Rizal" title="Rizal - Population:1,484 - Households:290 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="109,366,112,450,192,446,196,364,154,364" shape="poly">
+    <area  alt="Sikatuna" title="Sikatuna - Population:1,862 - Households:360 - Schools:2" href="https://bohol.gov.ph/talibon/" coords="197,362,192,445,254,461,259,435,235,429,241,418,218,413,230,399,241,370" shape="poly">
+    <area  alt="Zamora" title="Zamora - Population:1,751 - Households:386 - Schools:4" href="https://bohol.gov.ph/talibon/" coords="229,400,326,399,324,459,284,497,244,513,258,433,237,430,240,417,221,413,222,410" shape="poly">
+    <area  alt="San Roque" title="San Roque - Population:3,342 - Households:643 - Schools:2" href="https://bohol.gov.ph/talibon/" coords="326,457,363,446,388,429,390,418,390,411,411,406,412,414,414,428,418,432,417,439,416,449,366,466,287,497" shape="poly">
+    <area  alt="San Agustin" title="San Agustin - Population:5,179 - Households:1,000 - Schools:3" href="https://bohol.gov.ph/talibon/" coords="327,382,326,456,362,446,390,428,389,411,413,406,410,390,403,394,406,384" shape="poly">
+    <area  alt="San Carlos" title="San Carlos - Population:1,893 - Households:369 - Schools:0" href="https://bohol.gov.ph/talibon/" coords="252,341,233,399,328,398,326,366,318,354" shape="poly">
+    <area  alt="Balintawak" title="Balintawak - Population:1,974 - Households:347 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="330,367,361,349,400,357,404,366,410,361,408,375,405,384,327,381" shape="poly">
+    <area  alt="Burgos" title="Burgos - Population:1,137 - Households:240 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="105,274,109,366,133,363,132,309,124,311,121,277" shape="poly">
+    <area  alt="Bagacay" title="Bagacay - Population:3,902 - Households:833 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="122,276,138,271,144,274,151,269,159,272,154,364,134,363,133,309,124,309" shape="poly">
+    <area  alt="Tanghaligue" title="Tanghaligue - Population:2,405 - Households:505 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="158,274,154,364,198,365,218,290" shape="poly">
+    <area  alt="Santo Niño" title="Santo Niño - Population:4,625 - Households:899 - Schools:3" href="https://bohol.gov.ph/talibon/" coords="218,289,199,362,242,373,267,292,246,286" shape="poly">
+    <area  alt="San Jose" title="San Jose - Population:6,890 - Households:1,297 - Schools:3" href="https://bohol.gov.ph/talibon/" coords="266,293,253,341,318,354,329,368,348,356,349,332,369,318,354,300" shape="poly">
+    <area  alt="San Isidro" title="San Isidro - Population:4,720 - Households:915 - Schools:5" href="https://bohol.gov.ph/talibon/" coords="376,310,352,329,346,358,362,349,398,356,377,333,392,320" shape="poly">
+    <area  alt="San Pedro" title="San Pedro - Population:1,717 - Households:306 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="393,320,378,334,401,357,411,344" shape="poly">
+    <area  alt="Poblacion" title="Poblacion - Population:4,153 - Households:1,010 - Schools:5" href="https://bohol.gov.ph/talibon/" coords="359,291,357,300,369,314,374,310,372,295" shape="poly">
+    <area  alt="San Francisco" title="San Francisco - Population:6,695 - Households:1,306 - Schools:4" href="https://bohol.gov.ph/talibon/" coords="249,283,257,281,264,271,264,261,257,253,249,246,251,239,261,242,270,240,280,250,287,259,296,262,308,266,315,264,328,263,338,268,350,278,354,286,359,287,356,294,354,299,266,294,251,287" shape="poly">
+    <area  alt="Mahanay" title="Mahanay - Population:1,891 - Households:369 - Schools:3" href="https://bohol.gov.ph/talibon/" coords="105,189,132,177,142,165,147,171,157,162,192,155,205,157,204,171,193,177,180,182,176,186,185,190,233,189,255,188,260,200,255,207,230,199,171,196,168,203,161,209,146,209,136,207,137,215,140,223,137,228,123,228,116,230,106,228" shape="poly">
+    <area  alt="Busalian" title="Busalian - Population:2,354 - Households:471 - Schools:3" href="https://bohol.gov.ph/talibon/" coords="449,238,427,236,423,251,434,264,458,258,466,258,465,236" shape="poly">
+    <area  alt="Suba" title="Suba - Population:1,748 - Households:394 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="468,239,466,260,477,272,498,260,482,234" shape="poly">
+    <area  alt="Guindacpan" title="Guindacpan - Population:2,215 - Households:389 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="252,94,243,101,248,110,259,104" shape="poly">
+    <area  alt="Sag" title="Sag - Population:918 - Households:192 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="369,106,348,118,344,132,361,131,382,111" shape="poly">
+    <area  alt="Cataban" title="Cataban - Population:1,427 - Households:294 - Schools:5" href="https://bohol.gov.ph/talibon/" coords="504,66,504,102,520,106,522,65" shape="poly">
+    <area  alt="Calituban" title="Calituban - Population:3,738 - Households:869 - Schools:2" href="https://bohol.gov.ph/talibon/" coords="269,40,275,66,301,50" shape="poly">
+    <area  alt="Nocnocan" title="Nocnocan - Population:1,785 - Households:361 - Schools:1" href="https://bohol.gov.ph/talibon/" coords="562,47,564,58,574,60,574,44" shape="poly">
+                </map>
+            </div>
+       </section>
+       <a href="index.html">
+        <img class="flut" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/346105162_569462081738991_6806685114617458197_n.png?stp=dst-png_s403x403&_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Dm9lk3m2rYIAX_uZlo0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTj0PpniGYmqAnZRQNAuB7Q8BaSTzikmUMDETOiromvzA&oe=64912BE0">
+      </a>
+    </body>
+</html>
