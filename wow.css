@@ -50,6 +50,7 @@
         left: 15px;
         top:35%;
         height: 30%;   
+        transform: rotate(180deg);
         border-radius: 50%;
 
     }
@@ -58,8 +59,7 @@
         position: fixed;
         right: 15px;
         top:36%;
-        height: 30%;  
-        transform: rotate(180deg);
+        height: 30%; 
         border-radius: 50%;
 
     }
